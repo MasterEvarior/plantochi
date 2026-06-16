@@ -24,4 +24,4 @@ serve:
 [doc('Build documenation as HTML')]
 [group('docs')]
 build:
-  @gitbuilding build-html
+  @cd docs && gitbuilding build-html
