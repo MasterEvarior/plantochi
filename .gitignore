@@ -127,3 +127,8 @@ fabric.properties
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,intellij+all,direnv
+
+_site
+_site/*
+_build
+_build/*

@@ -1,13 +1,14 @@
 ---
 Title: Cool Thingy
 
-
 Authors:
     - MasterEvarior
     - XonneX
 
 Affiliation: FHNW
 License: MIT
+
+WebsiteRoot: '/plantochi/'
 
 # Uncomment below to add custom categories
 # CustomCategories:
