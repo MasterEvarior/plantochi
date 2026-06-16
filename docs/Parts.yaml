@@ -15,3 +15,37 @@ GroveCapMoistSensor:
     Suppliers:
         SeedStudio:
             Link: https://www.seeedstudio.com/Grove-Capacitive-Moisture-Sensor-Corrosion-Resistant-p-2580.html
+            PartNo: SH1107
+OledDisplay:
+    Name: Geekcreit 0.96 inch 4 pin white I2C OLED
+    Description: >
+        The SSD1306 is a 0.96-inch monochrome OLED display that communicates over I2C using just two wires — SDA and SCL.
+        It is one of the most commonly used displays in Arduino projects because of its sharp 128x64 pixel output, ultra-low power draw, and wide library support.
+    Specs:
+        "Display Size": 0.96 inches (measured diagonally)
+        Resolution: 128x64 pixels
+        Driver IC: SSD1306
+        Interface Type: I2C (can also be SPI on some modules)
+        Operating Voltage: 3.3V to 5V
+        Viewing Angle: Nearly 180 degrees
+        Color: Typically monochrome
+    Suppliers:
+        AliExpress:
+            Link: https://de.aliexpress.com/s/wiki-ssr/article/geekcreit-0.96-inch-oled-i2c-iic-communication-display-128-64-lcd-module-geekcreit-products-info-and-review
+            PartNo: HD44780
+TempHumiSensor:
+    Name: Grove Temperature Humidity Sensor
+    Description: >
+        Grove - Temp&Humi Sensor(SHT31) is a highly reliable, accurate, quick response and integrated temperature & humidity sensor.
+        The sensor(chip) used in the module is designed with Sensirion's CMOSens® technology.
+        The chip is well calibrated, linearized and compensated for digital output.
+    Specs:
+        "Input voltage (VCC)": 3.3 volts or 5 volts
+        "I/O Logic Level": 3.3 volts or 5 volts based on VCC
+        "Operating Current": 100 μA
+        "Operating Temperature": -40 - 125 ℃
+        "Temperature Sensor Range": -40 - 125 ℃, with ±0.3°C accuracy
+        "Humidity Sensor Range": 0% - 100%(Relative Humidity), with ±2% accuracy
+        Port: I2C
+        Weight: 4g
+        Dimensions: 40(length)x20(width)mm
