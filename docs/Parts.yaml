@@ -1,25 +1,17 @@
 ---
-M4x10PanSteel:
-    Name: M4x10 Pan Head Steel
+GroveCapMoistSensor:
+    Name: Grove Capacitive Moisture Sensor (Corrosion Resistant)
     Description: >
-        This is lots of text
-        about some screws?
+        The Grove - Capacitive Moisture Sensor (Corrosion Resistant) is a soil moisture sensor based on capacitance changes.
+        Compared with resistive sensors, capacitive sensors do not require direct exposure of the metal electrodes,
+        which can significantly reduce the erosion of the electrodes. Hence, we call it Corrosion Resistant.
     Specs:
-        Head: Pan
-        Length: 10 mm
-        Material: Stainless Steel
-        Pitch: 0.7
+        "Operating Voltage": 3.3V / 5V
+        "Output Interface": Analog
+        Length: 92.1mm
+        Width: 23.5mm
+        Height: 6.5mm
+        Weight: 10.6g
     Suppliers:
-        RS:
-            PartNo: 528-817
-            Link: https://uk.rs-online.com/web/p/machine-screws/0528817/
-        McMasterCarr:
-            PartNo: 90116A207
-            Link: https://www.mcmaster.com/90116A207
-Screwdriver_Philips_No2:
-    Name: No. 2 Phillips screwdriver
-    Description: >
-        No2 Phillips screwdriver. This is the correct size
-        form an M4 pan head screw
-    Specs:
-        Drive Size: No. 2
+        SeedStudio:
+            Link: https://www.seeedstudio.com/Grove-Capacitive-Moisture-Sensor-Corrosion-Resistant-p-2580.html

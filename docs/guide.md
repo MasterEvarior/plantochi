@@ -4,8 +4,7 @@
 
 ## Put screws into the widget {pagestep}
 
-- Get a [No. 2 Phillips screwdriver]{Qty: 1, Cat: tool} ready
-- Take three [M4x10 screws]{Qty: 3} and screw them into the [widget](widget.md){Qty: 1}
+- Get a [GroveCapMoistSensor]{Qty: 1} ready
 
 ## Put more screws into the widget {pagestep}
 
