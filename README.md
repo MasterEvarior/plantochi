@@ -1,6 +1,9 @@
-# example
+# Plantochi
 
-TODO
+> [!IMPORTANT]
+> This project was done during a school workshop, so it will not be maintained.
+
+A [Tamagotchi](https://de.wikipedia.org/wiki/Tamagotchi) but for your plants!
 
 ## Development
 
@@ -26,13 +29,16 @@ direnv allow
 
 ### Commands
 
-| Command | Description |
-|---------|-------------|
-| `just format` | Format all files (nixfmt, mdformat, yamllint) |
-| `just check` | Run commit checks (`nix flake check`) |
-| `just web` | Start interactive webapp for documentation |
-| `just build` | Build documentation as HTML |
+Run to see a list of all available commands:
+
+```shell
+just
+```
 
 ## AI Disclaimer
 
 OpenCode BigPickle was used to generate an initial version of this `README.md`.
+
+## License
+
+MIT

@@ -1,5 +1,5 @@
 ---
-Title: Cool Thingy
+Title: Plantochi
 
 Authors:
     - MasterEvarior
@@ -9,27 +9,3 @@ Affiliation: FHNW
 License: MIT
 
 WebsiteRoot: '/plantochi/'
-
-# Uncomment below to add custom categories
-# CustomCategories:
-#    printedtool:
-#        Reuse: False
-#        DisplayName: Printed tools
-
-# Uncomment below to set a custom default category
-# DefaultCategory: printedtool
-
-# Uncomment below to set the title for the bill of material on a page
-# PageBOMTitle: '##For this step you will need'
-
-# Uncomment below to override the project title
-# Title: 'My project'
-
-# Uncomment below to set a custom Website root for static HTML builds
-# WebsiteRoot: '/path/'
-
-# Uncomment below to disable fussy warnings
-# Fussy: False
-
-# Uncomment below to disable search functionality in the output
-# IncludeSearch: False
