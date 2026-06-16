@@ -58,8 +58,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: DeterminateSystems/nix-installer-action@main
-        with:
-          nix-package: nixpkgs#nixFlakes
       - name: Build
         run: nix develop --command just build
       - name: Upload static files as artifact
