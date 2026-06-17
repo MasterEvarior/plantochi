@@ -1,4 +1,39 @@
 ---
+PiezoBuzzer:
+    Name: Piezo Buzzer
+    Description: >
+        A piezo buzzer element for sound generation in electronics projects.
+    Specs:
+        "Rated Voltage (Square Wave)": 12Vp-p
+        "Operating Voltage": 1 - 30Vp-p
+        "Rated Current (MAX)": 3.5mA
+        "Min. Sound Output at 10cm": 85db
+        "Resonant Frequency": 1300Hz ± 500 / 4000Hz ± 500
+        "Operating Temperature": -20 - 60 °C
+        Diameter: 30mm
+        "Mounting Hole Width": 41mm
+        "Center Diameter": 5.7mm
+        Weight: 4.3g
+    Suppliers:
+        Adafruit:
+            Link: https://www.adafruit.com/product/1739
+            PartNo: 1739
+LDR:
+    Name: LDR Light Dependent Resistor
+    Description: >
+        A light dependent resistor (photoresistor) whose resistance decreases with increasing incident light intensity.
+    Specs:
+        Type: GL5528
+        "Max Voltage (DC)": 150V
+        "Max Power": 100 mW
+        "Operating Temperature": -30 - 70 °C
+        "Peak Spectral Response": 540 nm
+        "Dark Resistance": 1 MΩ (min)
+        "Light Resistance": 10-20 kΩ (at 10 Lux)
+    Suppliers:
+        AliExpress:
+            Link: https://de.aliexpress.com/item/1005011864778977.html
+            PartNo: GL5528
 GroveCapMoistSensor:
     Name: Grove Capacitive Moisture Sensor (Corrosion Resistant)
     Description: >
@@ -33,8 +68,29 @@ OledDisplay:
         AliExpress:
             Link: https://de.aliexpress.com/s/wiki-ssr/article/geekcreit-0.96-inch-oled-i2c-iic-communication-display-128-64-lcd-module-geekcreit-products-info-and-review
             PartNo: HD44780
+GroveOledDisplay:
+    Name: Grove OLED Display 0.96 inch
+    Description: >
+        Grove - OLED Display 0.96" module is an OLED monochrome 128x64 dot matrix display module
+        with Grove 4pin I2C Interface. It has bigger screen so that it can display more contents
+        than the OLED 96x96.
+    Specs:
+        "Display Size": 0.96 inches
+        Resolution: 128x64 pixels
+        Driver IC: SSD1308Z
+        Interface Type: I2C
+        Operating Voltage: 3.3V - 5.5V
+        Display Color: White
+        I2C Address: 0x3C
+        Panel Size: 26.7(W)x19.26(H) mm
+        Active Area: 21.74(W)x11.175(H) mm
+        Operating Temperature: -20 - 70 °C
+    Suppliers:
+        SeedStudio:
+            Link: https://www.seeedstudio.com/Grove-OLED-Display-0.96%26quot%3B-p-781.html
+            PartNo: 104030002
 TempHumiSensor:
-    Name: Grove Temperature Humidity Sensor
+    Name: Grove Temperature Humidity Sensor (SHT31)
     Description: >
         Grove - Temp&Humi Sensor(SHT31) is a highly reliable, accurate, quick response and integrated temperature & humidity sensor.
         The sensor(chip) used in the module is designed with Sensirion's CMOSens® technology.
@@ -49,3 +105,7 @@ TempHumiSensor:
         Port: I2C
         Weight: 4g
         Dimensions: 40(length)x20(width)mm
+    Suppliers:
+        SeedStudio:
+            Link: https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temp-Humi-Sensor-SHT35.html
+            PartNo: SHT31
