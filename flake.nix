@@ -34,6 +34,7 @@
             # Tools
             just
             gitBuilding
+            fritzing
 
             # Linters
             mdformat
