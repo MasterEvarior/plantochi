@@ -33,6 +33,12 @@ void loop(void) {
   Serial.println(sensorValue);
   delay(1000);        // delay in between reads for stability
 
+  int light = analogRead(A4);
+  Serial.print("LDR: ");
+  Serial.println(light);
+  delay(1000);
+
+
   float t = sht31.readTemperature();
   float h = sht31.readHumidity();
 
@@ -57,4 +63,8 @@ void loop(void) {
   u8g2.sendBuffer();					// transfer internal memory to the display
 
   delay(1000);
+
+  tone(5, 1000);
+  delay(1000);
+  noTone(5);
 }
