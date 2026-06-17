@@ -10,8 +10,15 @@
 #include <Wire.h>
 #endif
 
-U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, /* clock=*/ SCL, /* data=*/ SDA, /* reset=*/ U8X8_PIN_NONE);    //Low spped I2C
+#define LS_PIN 5
+#define MOISTURE_PIN A5
+#define LDR_PIN A4
+
+
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, SCL, SDA, U8X8_PIN_NONE);
 Adafruit_SHT31 sht31 = Adafruit_SHT31();
+
+
 
 void setup(void) {
   Serial.begin(115200);
@@ -28,12 +35,12 @@ void loop(void) {
   u8g2.sendBuffer();					// transfer internal memory to the display
   delay(1000);  
 
-  int sensorValue = analogRead(A5);
+  int sensorValue = analogRead(MOISTURE_PIN);
   Serial.print("Moist: ");
   Serial.println(sensorValue);
   delay(1000);        // delay in between reads for stability
 
-  int light = analogRead(A4);
+  int light = analogRead(LDR_PIN);
   Serial.print("LDR: ");
   Serial.println(light);
   delay(1000);
@@ -58,13 +65,28 @@ void loop(void) {
 
   delay(1000);
 
+  drawSmiley();
+
+  delay(1000);
+
+  tone(LS_PIN, 1000);
+  delay(1000);
+  noTone(LS_PIN);
+}
+
+void drawSmiley() {
   u8g2.clearBuffer();
-  u8g2.drawStr(0,10,"Coool World!");	// write something to the internal memory
-  u8g2.sendBuffer();					// transfer internal memory to the display
-
-  delay(1000);
-
-  tone(5, 1000);
-  delay(1000);
-  noTone(5);
+  
+  // 1. Draw the face outline (x, y, radius)
+  u8g2.drawCircle(64, 32, 25);
+  
+  // 2. Draw the eyes (x, y, radius)
+  u8g2.drawDisc(54, 25, 3); // Left eye
+  u8g2.drawDisc(74, 25, 3); // Right eye
+  
+  // 3. Draw the mouth (x, y, radius, start_angle, end_angle)
+  // This draws an arc for a smile
+  u8g2.drawArc(64, 32, 15, 0, 180, 360); 
+  
+  u8g2.sendBuffer();
 }
