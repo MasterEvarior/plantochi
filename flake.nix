@@ -1,5 +1,5 @@
 {
-  description = "TODO";
+  description = "Development flake for plantochi";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
