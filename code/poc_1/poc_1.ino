@@ -18,8 +18,6 @@
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, SCL, SDA, U8X8_PIN_NONE);
 Adafruit_SHT31 sht31 = Adafruit_SHT31();
 
-
-
 void setup(void) {
   Serial.begin(115200);
 
@@ -65,28 +63,11 @@ void loop(void) {
 
   delay(1000);
 
-  drawSmiley();
-
   delay(1000);
 
+  /*
   tone(LS_PIN, 1000);
   delay(1000);
   noTone(LS_PIN);
-}
-
-void drawSmiley() {
-  u8g2.clearBuffer();
-  
-  // 1. Draw the face outline (x, y, radius)
-  u8g2.drawCircle(64, 32, 25);
-  
-  // 2. Draw the eyes (x, y, radius)
-  u8g2.drawDisc(54, 25, 3); // Left eye
-  u8g2.drawDisc(74, 25, 3); // Right eye
-  
-  // 3. Draw the mouth (x, y, radius, start_angle, end_angle)
-  // This draws an arc for a smile
-  u8g2.drawArc(64, 32, 15, 0, 180, 360); 
-  
-  u8g2.sendBuffer();
+  */
 }

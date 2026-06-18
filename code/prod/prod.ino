@@ -32,23 +32,23 @@ enum Sensor {
   AIR_MOISTURE
 };
 
-enum Eyes {
+enum class Eyes {
   NORMAL,
   SQUINT,
   BIG
-}
+};
 
-enum Mouth {
+enum class Mouth {
   HAPPY,
   SAD,
   OPEN
-}
+};
 
-enum Forehead {
-  NORMAL,
-  SQUIGGLY,
-  SNOWFLAKE
-}
+enum class Symbol {
+  NONE,
+  HEAT,
+  COLD,
+};
 
 /*
   Keep this as is
@@ -63,16 +63,29 @@ void setup(void) {
 
   sht31.begin(SHT_ADDR);
   u8g2.begin();
+
+  displayClear();
+  displayText("Initializing...");
+  displayShow();
+  delay(1000);
+
+  displayClear();
+  displayText("All ready to go!");
+  displayShow();
+  delay(1000);
+  
+  displayClear();
 }
 
 void loop(void) {
-  displayText("Hello World!");
-  delay(1000);  
+  displayClear();
+  displaySmiley(Symbol::HEAT, Eyes::NORMAL, Mouth::HAPPY);
+  displayShow();
 
+   /*
   int moisture = readSensor(SOIL_MOISTURE);
   int light = readSensor(LIGHT);
   float t = readSensor(AIR_TEMPERATURE);
   float h = readSensor(AIR_MOISTURE);
-
-  delay(1000);
+  */
 }
