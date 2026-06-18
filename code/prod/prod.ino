@@ -13,17 +13,23 @@
 /*
   Variables to adjust
 */
+
 #define SHT_ADDR 0x44
 #define LS_PIN 5
 #define MOISTURE_PIN A5
 #define LDR_PIN A4
 
-#define M_THRESHOLD_LOW 0
-#define M_THRESHOLD_HIGH 0
-#define T_THRESHOLD_LOW 0
-#define T_THRESHOLD_HIGH 0
-#define L_THRESHOLD_LOW 0
-#define L_THRESHOLD_HIGH 0
+#define M_THRESHOLD_LOW 400
+#define M_THRESHOLD_HIGH 600
+#define T_THRESHOLD_LOW 15
+#define T_THRESHOLD_HIGH 30
+#define L_THRESHOLD_LOW 200
+#define L_THRESHOLD_HIGH 600
+
+
+/*
+  Keep this as is
+*/
 
 enum Sensor {
   LIGHT,
@@ -50,13 +56,11 @@ enum class Symbol {
   COLD,
 };
 
-/*
-  Keep this as is
-*/
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, SCL, SDA, U8X8_PIN_NONE);
 Adafruit_SHT31 sht31 = Adafruit_SHT31();
 unsigned long toneStartTime = 0;
 bool isBeeping = false;
+int messageState = 0;
 
 void setup(void) {
   Serial.begin(115200);
@@ -68,24 +72,87 @@ void setup(void) {
   displayText("Initializing...");
   displayShow();
   delay(1000);
-
-  displayClear();
-  displayText("All ready to go!");
-  displayShow();
-  delay(1000);
-  
-  displayClear();
 }
 
 void loop(void) {
+  int badStates = 0;
+  bool isThirsty = 0;
+
+  Symbol symbol = Symbol::NONE;
+  Eyes eyes = Eyes::NORMAL;
+  Mouth mouth = Mouth::HAPPY;
+
+  float light = readSensor(LIGHT);
+  if(light > L_THRESHOLD_HIGH){
+    eyes = Eyes::SQUINT;
+    badStates++;
+  } else if (light < L_THRESHOLD_LOW){
+    eyes = Eyes::BIG;
+    badStates++;
+  } else {
+    eyes = Eyes::NORMAL;
+  }
+
+  float airTemp = readSensor(AIR_TEMPERATURE);
+  if(airTemp > T_THRESHOLD_HIGH){
+    badStates++;
+    symbol = Symbol::HEAT;
+  } else if (airTemp < T_THRESHOLD_LOW){
+    badStates++;
+    symbol = Symbol::COLD;
+  } else {
+    symbol = Symbol::NONE;
+  }
+
+  // The value of the moisture sensor decreases
+  // as the moisture increases
+  float soilMoisture = readSensor(SOIL_MOISTURE);
+  if(soilMoisture > M_THRESHOLD_HIGH){
+    badStates++;
+    isThirsty = 1;
+    mouth = Mouth::OPEN;
+  } else if (soilMoisture < M_THRESHOLD_LOW){
+    badStates++;
+    mouth = Mouth::SAD;
+  } else {
+    mouth = Mouth::HAPPY;
+  }
+
   displayClear();
-  displaySmiley(Symbol::HEAT, Eyes::NORMAL, Mouth::HAPPY);
+  displaySmiley(symbol, eyes, mouth);
+  String text = getText(badStates);
+  displayText(text.c_str());
   displayShow();
 
-   /*
-  int moisture = readSensor(SOIL_MOISTURE);
-  int light = readSensor(LIGHT);
-  float t = readSensor(AIR_TEMPERATURE);
-  float h = readSensor(AIR_MOISTURE);
-  */
+  if((isThirsty || badStates > 1) && !isBeeping){
+    startBeep();
+  } else {
+    stopBeep();
+  }
+
+  updateBeep();
+
+  // Cooldown
+  delay(1500);
+}
+
+String getText(int amount){
+  if(amount == 0){
+    return "";
+  }
+
+  if(messageState == 0){
+    messageState = 1;
+    return "Bad plant parent!";
+  } else if(messageState == 1 && amount != 1){
+    messageState = 0;
+    String suffix = " things are wrong!";
+    return amount + suffix;
+  } else if(messageState == 1 && amount == 1){
+    messageState = 0;
+    String suffix = " thing is wrong!";
+    return amount + suffix;
+  } 
+
+  return "";
 }
