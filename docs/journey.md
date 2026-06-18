@@ -55,99 +55,7 @@ If two emotions concur at the same time, or it is "Thirsty", a piezo will be act
 
 ### Code
 
-```{.c}
-#include <Arduino.h>
-#include <U8g2lib.h>
-#include <Wire.h>
-#include "Adafruit_SHT31.h"
-
-#ifdef U8X8_HAVE_HW_SPI
-#include <SPI.h>
-#endif
-#ifdef U8X8_HAVE_HW_I2C
-#include <Wire.h>
-#endif
-
-#define LS_PIN 5
-#define MOISTURE_PIN A5
-#define LDR_PIN A4
-
-
-U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, SCL, SDA, U8X8_PIN_NONE);
-Adafruit_SHT31 sht31 = Adafruit_SHT31();
-
-void setup(void) {
-  Serial.begin(115200);
-
-  sht31.begin(0x44);
-  u8g2.begin();
-}
-
-void loop(void) {
-  
-  u8g2.clearBuffer();					// clear the internal memory
-  u8g2.setFont(u8g2_font_ncenB08_tr);	// choose a suitable font
-  u8g2.drawStr(0,10,"Hello World!");	// write something to the internal memory
-  u8g2.sendBuffer();					// transfer internal memory to the display
-  delay(1000);  
-
-  int sensorValue = analogRead(MOISTURE_PIN);
-  Serial.print("Moist: ");
-  Serial.println(sensorValue);
-  delay(1000);        // delay in between reads for stability
-
-  int light = analogRead(LDR_PIN);
-  Serial.print("LDR: ");
-  Serial.println(light);
-  delay(1000);
-
-
-  float t = sht31.readTemperature();
-  float h = sht31.readHumidity();
-
-  if (! isnan(t)) {  // check if 'is not a number'
-    Serial.print("Temp *C = "); Serial.print(t); Serial.print("\t\t");
-  } else { 
-    Serial.println(t);
-    Serial.println("Failed to read temperature");
-  }
-  
-  if (! isnan(h)) {  // check if 'is not a number'
-    Serial.print("Hum. % = "); Serial.println(h);
-  } else { 
-    Serial.println(h);
-    Serial.println("Failed to read humidity");
-  }
-
-  delay(1000);
-
-  drawSmiley();
-
-  delay(1000);
-
-  tone(LS_PIN, 1000);
-  delay(1000);
-  noTone(LS_PIN);
-}
-
-void drawSmiley() {
-  u8g2.clearBuffer();
-  
-  // 1. Face (x, y, radius)
-  u8g2.drawCircle(64, 32, 25);
-  
-  // 2. Eyes (x, y, radius)
-  u8g2.drawDisc(54, 25, 3);
-  u8g2.drawDisc(74, 25, 3);
-  
-  // 3. Smile (x, y, radius, start_angle, end_angle)
-  // For U8g2, angles are often 0-255 where 255 = 360 degrees.
-  // To get a half-circle (180 degrees), we use 0 to 127.
-  u8g2.drawArc(64, 38, 15, 0, 127); 
-  
-  u8g2.sendBuffer();
-}
-```
+You can see the code for the first prototype [here](../code/poc_1/poc_1.ino).
 
 #### Sketch of the PoC
 
@@ -165,3 +73,77 @@ Description and more details: [https://learn.adafruit.com/adafruit-feather-m4-ex
 ![day_2_feather_m4_express_pinout.png](images/day_2_feather_m4_express_pinout.png)
 
 ## Day 3
+
+Today was mostly spent finishing up the code and designing the enclosure.
+
+### Code
+
+The code was split in mutliple files to make it *somewhat* more managable. This brought the core loop to look like this:
+
+```{.c}
+void loop(void) {
+  int badStates = 0;
+  bool isThirsty = 0;
+
+  Symbol symbol = Symbol::NONE;
+  Eyes eyes = Eyes::NORMAL;
+  Mouth mouth = Mouth::HAPPY;
+
+  float light = readSensor(LIGHT);
+  if(light > L_THRESHOLD_HIGH){
+    eyes = Eyes::SQUINT;
+    badStates++;
+  } else if (light < L_THRESHOLD_LOW){
+    eyes = Eyes::BIG;
+    badStates++;
+  } else {
+    eyes = Eyes::NORMAL;
+  }
+
+  float airTemp = readSensor(AIR_TEMPERATURE);
+  if(airTemp > T_THRESHOLD_HIGH){
+    badStates++;
+    symbol = Symbol::HEAT;
+  } else if (airTemp < T_THRESHOLD_LOW){
+    badStates++;
+    symbol = Symbol::COLD;
+  } else {
+    symbol = Symbol::NONE;
+  }
+
+  // The value of the moisture sensor decreases
+  // as the moisture increases
+  float soilMoisture = readSensor(SOIL_MOISTURE);
+  if(soilMoisture > M_THRESHOLD_HIGH){
+    badStates++;
+    isThirsty = 1;
+    mouth = Mouth::OPEN;
+  } else if (soilMoisture < M_THRESHOLD_LOW){
+    badStates++;
+    mouth = Mouth::SAD;
+  } else {
+    mouth = Mouth::HAPPY;
+  }
+
+  displayClear();
+  displaySmiley(symbol, eyes, mouth);
+  String text = getText(badStates);
+  displayText(text.c_str());
+  displayShow();
+
+  if((isThirsty || badStates > 1) && !isBeeping){
+    startBeep();
+  } else {
+    stopBeep();
+  }
+
+  updateBeep();
+
+  // Cooldown
+  delay(1500);
+}
+```
+
+You can see the entire code under `/code/prod/`.
+
+### Enclosure

@@ -89,6 +89,47 @@ GroveOledDisplay:
         SeedStudio:
             Link: https://www.seeedstudio.com/Grove-OLED-Display-0.96%26quot%3B-p-781.html
             PartNo: 104030002
+USBMicroCable:
+    Name: USB-A to Micro USB Cable
+    Description: >
+        A standard USB 2.0 A to Micro-USB B cable for powering and programming
+        microcontroller boards such as Feather, Arduino, and similar development boards.
+    Specs:
+        Connector A: USB-A or C
+        Connector B: Micro-USB
+FeatherM4:
+    Name: Feather M4
+    Description: >
+        A development board featuring the ATSAMD51 32-bit Cortex M4 core running at 120 MHz,
+        with 512 KB flash, 192 KB RAM, and 2 MB SPI flash for CircuitPython storage.
+        Measures 2.0" x 0.9" x 0.28" without headers and weighs 5 grams.
+    Specs:
+        MCU: ATSAMD51J18 (32-bit Cortex M4, 120 MHz)
+        "Flash": 512 KB
+        "RAM": 192 KB
+        "SPI Flash": 2 MB
+        "Operating Voltage": 3.3V
+        "Logic Level": 3.3V
+        "Input Voltage": 3.3V - 5.5V (USB) or 3.7V - 4.2V (LiPo)
+        "Regulator Output": 3.3V @ 500mA peak
+        Dimensions: 51mm x 23mm x 8mm (2.0" x 0.9" x 0.28")
+        Weight: 5g
+        GPIO: 21
+        ADC: "Dual 1 MSPS 12-bit (6 analog pins)"
+        DAC: "Dual 1 MSPS 12-bit (A0 and A1)"
+        "PWM": 16
+        SERCOM: 6
+        "I2S": true
+        "Parallel Capture": true (8-bit)
+        "Crypto Engine": "AES-256, true RNG, Pubkey controller"
+        "LiPo Charger": "100mA built-in"
+        "USB": "Native, bootloader + serial debug"
+        "Crystal": 32.768 KHz
+    Suppliers:
+        Adafruit:
+            Link: https://www.adafruit.com/product/3857
+            PartNo: 3857
+
 TempHumiSensor:
     Name: Grove Temperature Humidity Sensor (SHT31)
     Description: >

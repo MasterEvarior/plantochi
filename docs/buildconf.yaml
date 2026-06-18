@@ -9,3 +9,6 @@ Affiliation: FHNW
 License: MIT
 
 WebsiteRoot: '/plantochi/'
+
+ExternalDirs:
+    cad-files: "../code"
