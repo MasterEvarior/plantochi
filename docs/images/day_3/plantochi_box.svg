@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="plantochi_box.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="715.59206"
+     inkscape:cy="197.28279"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer8"
+     showgrid="true">
+    <inkscape:grid
+       id="grid2"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="0.99999998"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="front"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect1"
+       style="fill:none;stroke:#ff0000;stroke-width:0.294939"
+       d="m 5.1474894,5.1474894 v 5.7567546 h 3.9026042 v 8.000028 H 5.1474894 v 16.048117 h 3.9026042 v 8.000028 H 5.1474894 v 16.047599 h 3.852478 v 8.000029 h -3.852478 v 5.852356 H 21.144446 v -3.967717 h 8.000028 v 3.967717 h 16.571082 v -3.967717 h 8.000028 v 3.967717 h 16.571082 v -3.967717 h 8.000028 v 3.967717 h 16.571082 v -3.967717 h 8.000024 v 3.967717 h 16.57109 v -3.967717 h 8.00002 v 3.967717 H 144 v -3.852478 h 8.00002 v 3.852478 h 15.85227 v -5.817733 h -3.95222 v -8.000029 h 3.95222 V 42.98704 h -3.90209 v -8.000028 h 3.90209 v -16.0476 h -3.90209 v -8.000028 h 3.90209 V 5.1474894 h -15.80214 v 3.9026042 h -8.00003 V 5.1474894 h -16.63723 v 5.168e-4 h 0.0558 V 9.147762 h -0.0558 -7.9437 -0.076 V 5.1474894 H 102.8976 V 9.147762 h -0.01 -8.000032 -0.0098 V 5.1474894 H 78.316667 V 9.147762 h -0.0098 -8.000028 -0.0098 V 5.1474894 H 53.735738 V 9.147762 h -0.0098 -8.000029 -0.0098 V 5.1474894 H 29.164628 V 9.147762 H 29.144478 21.14445 V 5.1480062 5.1474894 Z"
+       inkscape:label="front" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.0839225"
+       id="rect18-8"
+       width="4.016077"
+       height="7.9660778"
+       x="143.02716"
+       y="17.108627"
+       inkscape:label="wallmount" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.0839225"
+       id="rect18-5-2"
+       width="4.016077"
+       height="7.9660778"
+       x="143.02716"
+       y="38.058334"
+       inkscape:label="wallmount" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.0839225"
+       id="rect18-5"
+       width="4.016077"
+       height="7.9660778"
+       x="73.991959"
+       y="38.058334"
+       inkscape:label="wallmount" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.0839225"
+       id="rect18"
+       width="4.016077"
+       height="7.9660778"
+       x="73.991951"
+       y="17.108627"
+       inkscape:label="wallmount" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="top">
+    <path
+       id="rect2"
+       style="fill:none;stroke:#ff0000;stroke-width:0.103156"
+       d="m 184.08747,5.0017619 v 5.9396891 h -4.08812 v 8.000028 h 4.08812 v 16.000057 h -4.08812 v 8.000029 h 4.08812 v 16.03468 h -4.08812 v 7.965405 h 4.08812 v 5.999634 h -0.0873 v 0.05684 h 3.99975 v -3.998205 h 8.00003 v 3.998205 h 10.94197 v -3.998205 h 8.00003 v 3.998205 h 3.80597 v -0.05684 -1.268139 -4.731495 h 4.14858 v -7.965405 h -4.09846 v -16.03468 h 4.09846 v -8.000029 h -3.99872 V 18.941479 h 3.99872 v -8.000028 h -3.99872 V 5.0017619 h -3.90622 V 9.0418254 H 206.9915 V 5.0017619 h -10.94145 v 3.9899373 h -8.00003 V 5.0017619 Z"
+       inkscape:label="top" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.1"
+       id="rect33"
+       width="17"
+       height="25"
+       x="193"
+       y="22.883331"
+       inkscape:label="display" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="bottom">
+    <path
+       id="rect2-6"
+       style="fill:none;stroke:#ff0000;stroke-width:0.103156"
+       d="m 233.92076,4.9517298 v 5.9396882 h -4.08812 v 8.000028 h 4.08812 v 16.000057 h -4.08812 v 8.000029 h 4.08812 v 16.03468 h -4.08812 v 7.965405 h 4.08812 v 5.999634 h -0.0873 v 0.05684 h 3.99975 v -3.998205 h 8.00003 v 3.998205 h 10.94197 v -3.998205 h 8.00003 v 3.998205 h 3.80597 v -0.05684 -1.268139 -4.731495 h 4.14858 v -7.965405 h -4.09846 v -16.03468 h 4.09846 v -8.000029 h -3.99872 V 18.891446 h 3.99872 v -8.000028 h -3.99872 V 4.9517298 h -3.90622 v 4.0400628 h -8.00006 V 4.9517298 h -10.94145 v 3.9899368 h -8.00003 V 4.9517298 Z"
+       inkscape:label="bottom" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.1"
+       id="rect34"
+       width="4"
+       height="8"
+       x="251"
+       y="38.900002"
+       inkscape:label="charging port" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="side 1">
+    <path
+       id="rect10"
+       style="fill:none;stroke:#ff0000;stroke-width:0.150793"
+       d="M 22.001758 79.999768 L 22.001758 83.921493 L 10.001973 83.921493 L 10.001973 85.92137 L 10.001973 87.921248 L 10.001973 87.999797 L 6.0001506 87.999797 L 6.0001506 95.999825 L 10.001973 95.999825 L 10.001973 106.92164 L 10.001973 107.00019 L 6.0001506 107.00019 L 6.0001506 115.00022 L 10.001973 115.00022 L 10.001973 118.92142 L 22.001758 118.92142 L 22.001758 122.89534 L 29.945459 122.89534 L 29.945459 118.8713 L 47.086532 118.8713 L 47.086532 122.89534 L 55.001811 122.89534 L 55.001811 118.92142 L 71.001868 118.92142 L 71.001868 122.89534 L 79.001896 122.89534 L 79.001896 118.92142 L 96.001892 118.92142 L 96.001892 122.89534 L 103.9983 122.89534 L 103.9983 118.8713 L 120.00198 118.8713 L 120.00198 122.89534 L 128.00201 122.89534 L 128.00201 118.92142 L 145.002 118.92142 L 145.002 122.89534 L 153.00203 122.89534 L 153.00203 118.92142 L 164.92533 118.92142 L 164.92533 114.96611 L 169.05015 114.96611 L 169.05015 107.00019 L 164.92533 107.00019 L 164.92533 106.92164 L 164.92533 101.46047 L 164.92533 95.999825 L 169.00002 95.999825 L 169.00002 87.921248 L 164.92533 87.921248 L 164.92533 83.921493 L 153.00203 83.921493 L 153.00203 79.999768 L 145.002 79.999768 L 145.002 83.921493 L 128.00201 83.921493 L 128.00201 79.999768 L 120.00198 79.999768 L 120.00198 83.921493 L 103.9983 83.921493 L 103.9983 79.999768 L 96.001892 79.999768 L 96.001892 83.921493 L 79.001896 83.921493 L 79.001896 79.999768 L 71.001868 79.999768 L 71.001868 83.921493 L 55.001811 83.921493 L 55.001811 79.999768 L 47.086532 79.999768 L 47.086532 83.971619 L 29.945459 83.971619 L 29.945459 79.999768 L 22.001758 79.999768 z "
+       inkscape:label="side 1" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.1"
+       id="rect24"
+       width="3.9999998"
+       height="8"
+       x="74"
+       y="97"
+       inkscape:label="wallmount" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.1"
+       id="rect24-6"
+       width="3.9999998"
+       height="8"
+       x="143.0352"
+       y="97"
+       inkscape:label="wallmount" />
+    <circle
+       style="fill:none;stroke:#ff0000;stroke-width:0.1"
+       id="path34"
+       cx="27.433331"
+       cy="101.375"
+       r="14.5"
+       inkscape:label="piezo" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="side 2">
+    <path
+       id="rect32"
+       style="fill:none;stroke:#ff0000;stroke-width:0.1"
+       d="M 20.999752 128.02629 L 20.999752 132.00021 L 9.0764486 132.00021 L 9.0764486 135.99997 L 5.0002116 135.99997 L 5.0002116 144 L 9.0764486 144 L 9.0764486 154.99984 L 5.0002116 154.99984 L 5.0002116 162.99987 L 9.0542277 162.99987 L 9.0542277 166.99549 L 9.0764486 166.99549 L 9.0764486 167.00014 L 20.999752 167.00014 L 20.999752 170.92187 L 28.99978 170.92187 L 28.99978 167.00014 L 45.999776 167.00014 L 45.999776 170.92187 L 53.999805 170.92187 L 53.999805 167.00014 L 70.003479 167.00014 L 70.003479 170.92187 L 77.99989 170.92187 L 77.99989 167.00014 L 94.999886 167.00014 L 94.999886 170.92187 L 102.99991 170.92187 L 102.99991 167.00014 L 118.99997 167.00014 L 118.99997 170.92187 L 126.91525 170.92187 L 126.91525 166.95002 L 144.05632 166.95002 L 144.05632 170.92187 L 152.00002 170.92187 L 152.00002 167.00014 L 163.99981 167.00014 L 163.99981 163.09444 L 168.05021 163.09444 L 168.05021 154.8629 L 163.99981 154.8629 L 163.99981 144 L 168.00008 144 L 168.00008 135.99997 L 163.99981 135.99997 L 163.99981 132.00021 L 152.00002 132.00021 L 152.00002 128.02629 L 144.05632 128.02629 L 144.05632 132.05034 L 126.91525 132.05034 L 126.91525 128.02629 L 118.99997 128.02629 L 118.99997 132.00021 L 102.99991 132.00021 L 102.99991 128.02629 L 94.999886 128.02629 L 94.999886 132.00021 L 77.99989 132.00021 L 77.99989 128.02629 L 70.003479 128.02629 L 70.003479 132.05034 L 53.999805 132.05034 L 53.999805 128.02629 L 45.999776 128.02629 L 45.999776 132.00021 L 28.99978 132.00021 L 28.99978 128.02629 L 20.999752 128.02629 z "
+       inkscape:label="side 2" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="wall">
+    <path
+       id="rect22"
+       style="fill:none;stroke:#ff0000;stroke-width:0.124901"
+       d="m 184.9992,85.062452 v 12.937195 h -4.06228 v 8.000023 h 4.06228 v 13.95109 h 8.00003 v 4.08502 h 8.00003 v -4.08502 h 13.01625 v 4.16925 h 7.9835 v -4.16925 h 7.93853 V 85.062452 Z"
+       inkscape:label="wall" />
+    <path
+       id="rect22-5"
+       style="fill:none;stroke:#ff0000;stroke-width:0.124901"
+       d="m 239.9992,85.062452 v 12.937195 h -4.06228 v 8.000023 h 4.06228 v 13.95109 h 8.00003 v 4.08502 h 8.00003 v -4.08502 h 13.01625 v 4.16925 h 7.9835 v -4.16925 h 7.93853 V 85.062452 Z"
+       inkscape:label="wall" />
+    <ellipse
+       style="fill:none;stroke:#ff0000;stroke-width:0.1"
+       id="path35"
+       cx="14.737767"
+       cy="-191.0771"
+       rx="4"
+       ry="5"
+       inkscape:label="LDR"
+       transform="rotate(90)" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.1"
+       id="rect35"
+       width="3"
+       height="8"
+       x="-64"
+       y="187"
+       transform="rotate(-90)"
+       inkscape:label="moisture cable" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="hook 1">
+    <path
+       id="rect36"
+       style="fill:none;stroke:#ff0000;stroke-width:0.1"
+       d="M 187.90739 128.78645 L 187.90739 132.76296 L 187.88362 132.76296 L 187.88362 159.7365 L 186.73641 159.7365 L 190.56149 163.56159 L 194.38658 159.7365 L 192.85696 159.7365 L 192.85696 133.78667 L 252.8719 133.78667 L 252.8719 138.78636 L 247.7146 138.78636 L 247.7146 142.72979 L 252.8719 142.72979 L 252.8719 142.73651 L 257.92896 142.73651 L 257.92896 132.79913 L 257.90726 132.79913 L 257.90726 128.78645 L 187.90739 128.78645 z "
+       inkscape:label="hook" />
+    <path
+       id="rect36-6"
+       style="fill:none;stroke:#ff0000;stroke-width:0.1"
+       d="m 268.38582,163.94334 v -3.97651 h 0.0238 v -26.97354 h 1.14721 l -3.82508,-3.82509 -3.82509,3.82509 h 1.52962 v 25.94983 h -60.01494 v -4.99969 h 5.1573 V 150 h -5.1573 v -0.007 h -5.05706 v 9.93738 h 0.0217 v 4.01268 z"
+       inkscape:label="hook" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.111077"
+       id="rect41"
+       width="10.215528"
+       height="4.9319162"
+       x="205.05553"
+       y="60.055538"
+       inkscape:label="hook mount" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:0.111077"
+       id="rect41-9"
+       width="10.215528"
+       height="4.9319162"
+       x="205.05553"
+       y="13.055539"
+       inkscape:label="hook mount" />
+  </g>
+</svg>

@@ -147,3 +147,37 @@ void loop(void) {
 You can see the entire code under `/code/prod/`.
 
 ### Enclosure
+
+The plantochi should be usable for all kinds of plants.
+Some of these plants generate produce.
+The PLA that is used in the schools’ 3D-printers, is not particularly food safe.
+Therefore, wood was used for the box which is laser cut from sheets.
+
+![plantochi_box.svg](images/day_3/plantochi_box.svg)
+
+After laser cutting the box was assembled and held together by strong willpower, prayers and some tape.
+
+![plantochi_box_front.jpg](images/day_3/plantochi_box_front.jpg)
+![plantochi_box_top.jpg](images/day_3/plantochi_box_top.jpg)
+
+Some details were noticed when putting the components into the box:
+
+- The cable for the display is very short and needs to reach very far
+  - Moving the display slot a bit over
+  - Switching the orientation for the box, so that the display points the right way (parts of the display are blue and 
+    yellow and this needs to face the right direction).
+- Increase the size for the soil moisture sensor cable.
+- Decrease the size for the LDR sensor (must have been drunk while measuring that).
+- Adding a little hole in the wall for the battery.
+- Increasing the size for the charging cable (those suckers are huge).
+
+![plantochi_box_v2.svg](images/day_3/plantochi_box_v2.svg)
+
+After planning all the details and creating different mount options (based on flower pot sizes), the **Next Gen Box 2.0** 
+is released.
+The **Next Gen Box 2.0** comes without any problems and can actually be used with the selected components.
+Some wood glue and tape later, it is assembled and ready for tomorrow's hot glue day, where we make fit everything in 
+the box.
+
+![plantochi_box_v2_front.jpg](images/day_3/plantochi_box_v2_front.jpg)
+![plantochi_box_v2_top.jpg](images/day_3/plantochi_box_v2_top.jpg)
