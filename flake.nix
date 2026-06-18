@@ -22,7 +22,7 @@
           projectRootFile = "flake.nix";
           programs = {
             nixfmt.enable = true;
-            mdformat.enable = true;
+            mdformat.enable = false;
             yamllint.enable = true;
           };
         };

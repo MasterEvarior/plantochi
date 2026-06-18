@@ -19,7 +19,7 @@ Then open **Tools → Board → Boards Manager**, search for `Adafruit Feather M
 
 ## Install the code {pagestep}
 
-Connect your [Feather M4 Express]{Qty: 1} to your laptop using a [USB A (or C) to micro USB cable]{Qty: 1}.
+Connect your [Feather M4 Express]{Qty: 1} to your laptop using a [USB A (or C) to micro USB cable]{Qty: 1, Cat: Tool}.
 Download the code from `code/prod/` and open the `prod.ino` file in the Arduino IDE.
 
 Select your board: go to **Tools → Board → Adafruit SAMD Boards → Adafruit Feather M4 Express**.
@@ -27,5 +27,5 @@ Select the port: **Tools → Port → (the port your Feather is connected to)**.
 
 Finally, click the **Upload** button (right arrow icon) or press **Ctrl+U** to compile and flash the code onto your Feather M4.
 
-[feather m4 express]: Parts.yaml#FeatherM4
-[usb a (or c) to micro usb cable]: Parts.yaml#USBMicroCable
+[Feather M4 Express]: Parts.yaml#FeatherM4
+[USB A (or C) to micro USB cable]: Parts.yaml#USBMicroCable
