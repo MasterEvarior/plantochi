@@ -5,6 +5,9 @@
 
 A [Tamagotchi](https://de.wikipedia.org/wiki/Tamagotchi) but for your plants!
 
+See the guide [here](https://masterevarior.github.io/plantochi/).
+
+
 ## Development
 
 ### Git hooks
