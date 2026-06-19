@@ -181,3 +181,55 @@ the box.
 
 ![plantochi_box_v2_front.jpg](images/day_3/plantochi_box_v2_front.jpg)
 ![plantochi_box_v2_top.jpg](images/day_3/plantochi_box_v2_top.jpg)
+
+This box fits all the components and can therefore be used.
+
+### Assembly
+
+The box is fitted with all the components.
+Some of them fit quite tightly into the box (like the Piezo), others are more loose (like the MCU).
+To have everything fixed and to prevent any random failures due to movements in the box, an unhealthy amount of hot
+glue is used.
+In German there is a good saying for this: "Viel hilft viel".
+Literally translated, it means "a lot helps a lot".
+It is mostly used with irony and goes a bit into the opposite of "the more, the merrier".
+Anyway, most parts will not move anymore.
+The hot glue made sure of it.
+
+![assembly_top.jpg](images/day_3/assembly_top.jpg)
+![glue_ldr.jpg](images/day_3/glue_ldr.jpg)
+![glue_protoboard.jpg](images/day_3/glue_protoboard.jpg)
+
+Now, the logic was tested multiple times before putting everything in the box.
+It was tested again after putting it into the box.
+After hot gluing everything in place and having everything at their definite location, everything was tested again.
+Two heart attacks later, checking the soldering lines was in order.
+The symptom was a non-working OLED display.
+There are four cables coming from the display: Ground, VCC, SCL, SDA.
+Best if we check with a multimeter, if everything is still connected.
+Given that the other components that were visible/audioable were still working, the code was most likely fine (there
+were no changes anyway).
+To check if every connection is fine, one can start checking that there is a connection between every cable (1,2,3,4)
+and their appropriate counterpart (5,6,7,8).
+The expected outcome is the following connections:
+1 → 7 (clock),
+2 → 8 (data),
+3 → 5 (VCC),
+4 → 6 (GND).
+
+![debug.png](images/day_3/debug.png)
+
+Turns out, all the connections are fine like that.
+The next thing is checking for shorts.
+Turns out data and VCC are connected somewhere.
+At first this made little sense, as the soldering for the OLED display looks good.
+There is a second connection on the same IC2 connection, though.
+The one for the temperature and humidity sensor.
+As you already can guess, the cables there were touching.
+Bending the cables back into shape and, while monitoring that the display keeps working, hot gluing everything, solved
+the problem.
+
+![glue_fix.jpg](images/day_3/glue_fix.jpg)
+
+Lesson learned: Apparently, if you crunch a couple of cables around a corner, and their uninsulated ends touch, half 
+the project will not work anymore.
