@@ -27,5 +27,5 @@ Select the port: **Tools → Port → (the port your Feather is connected to)**.
 
 Finally, click the **Upload** button (right arrow icon) or press **Ctrl+U** to compile and flash the code onto your Feather M4.
 
-[Feather M4 Express]: Parts.yaml#FeatherM4
-[USB A (or C) to micro USB cable]: Parts.yaml#USBMicroCable
+[Feather M4 Express]:  ../Parts.yaml#FeatherM4
+[USB A (or C) to micro USB cable]:  ../Parts.yaml#USBMicroCable

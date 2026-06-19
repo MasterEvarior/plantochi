@@ -97,6 +97,56 @@ USBMicroCable:
     Specs:
         Connector A: USB-A or C
         Connector B: Micro-USB
+LaserCutter:
+    Name: Laser Cutter
+    Description: >
+        A machine that can cut wood with shiny light. We used a Trotec Q400 but it will probably work with a much less expensive one.
+SolderingIron:
+    Name: Soldering Iron
+    Description: >
+        A soldering iron with a fine tip for soldering through-hole components and headers.
+SolderWire:
+    Name: Solder Wire
+    Description: >
+        Lead-free solder wire for electronics soldering.
+HeaderPins:
+    Name: Pin Headers
+    Description: >
+        Breakaway male pin headers for soldering to the Feather M4 and other boards.
+LiPoBattery:
+    Name: LiPo Battery
+    Description: >
+        A 3.7V LiPo battery for powering the Plantochi. Fits inside the enclosure and connects to the Feather M4's built-in charger.
+HotGlueGun:
+    Name: Hot Glue Gun
+    Description: >
+        A hot glue gun for securing components and wires inside the enclosure.
+WoodGlue:
+    Name: Wood Glue
+    Description: >
+        Wood glue for assembling the laser-cut plywood enclosure.
+ProtoBoard:
+    Name: Protoboard
+    Description: >
+        A prototyping board (perfboard) for soldering circuits together.
+    Suppliers:
+        Adafruit:
+            Link: https://www.adafruit.com/product/2670
+            PartNo: 2670
+Wire:
+    Name: Hook-up Wire
+    Description: >
+        Assorted 22 AWG hook-up wire for making connections between components.
+Wood:
+    Name: A4 Plywood Sheet
+    Specs:
+        Depth: 4mm
+        Width: 210mm
+        Height: 297mm
+    Suppliers:
+        Jumbo:
+            Link: https://www.jumbo.ch/de/bauen-renovieren/holz/leisten-staebe/bastelholz/sperrholz-a4-pappel-5-st-4-mm/p/3424522
+            PartNo: 3424522
 FeatherM4:
     Name: Feather M4
     Description: >
