@@ -10,6 +10,12 @@ Fit the protoboard and sensors into [the created enclosure](./enclosure.md){step
 
 Use a [Hot Glue Gun]{Qty: 1, Cat: Tool} to secure the protoboard, sensors, and cables inside the box. Apply glue to the corners of the components and hold them in place until the glue sets. Avoid getting glue on connectors or the display.
 
+
+![](../images/day_3/assembly_top.jpg)
+![](../images/day_3/debug.png)
+![](../images/day_3/glue_ldr.jpg)
+![](../images/day_3/glue_fix.jpg)
+
 ## Close the box {pagestep}
 
 Press the lid on firmly. We recommend not using any glue here, so you can open it up later on.
