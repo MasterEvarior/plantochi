@@ -25,7 +25,7 @@ Solder the wires and pin headers from the Feather M4 to the [Protoboard], routin
 
 ## Test your soldering {pagestep}
 
-Visually inspect all solder joints for cold joints or bridges. You should also be able to see the readings for each sensonr, aswell as something on the display, if you already installed the software from [the step before](software.md){step}.
+Visually inspect all solder joints for cold joints or bridges. You should also be able to see the readings for each sensonr, aswell as something on the display, if you already installed the software from [the step before](software.md).
 
 [Soldering Iron]: ../Parts.yaml#SolderingIron
 [Solder Wire]:  ../Parts.yaml#SolderWire

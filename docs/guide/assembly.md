@@ -4,7 +4,7 @@
 
 ## Place the electronics in the box {pagestep}
 
-Fit the protoboard and sensors into [the created enclosure](./enclosure.md){step}. Connect the [LiPo Battery]{Qty: 1} to the Feather M4 and tuck it into the middle compartment. Route the [USB A (or C) to micro USB cable]{Qty: 1, Cat: Tool} through the charging port hole. Make sure the OLED display sits flush in its slot and the soil moisture sensor cable exits through its opening.
+Fit the protoboard and sensors into [the created enclosure](./enclosure.md). Connect the [LiPo Battery]{Qty: 1} to the Feather M4 and tuck it into the middle compartment. Route the [USB A (or C) to micro USB cable]{Qty: 1, Cat: Tool} through the charging port hole. Make sure the OLED display sits flush in its slot and the soil moisture sensor cable exits through its opening.
 
 ## Hot glue everything in place {pagestep}
 
