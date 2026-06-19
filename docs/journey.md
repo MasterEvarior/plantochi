@@ -62,7 +62,7 @@ You can see the code for the first prototype [here](../code/poc_1/poc_1.ino).
 A first sketch of the prototype is displayed below.
 It is used to get some sense of what components we need and a bit on how they are supposed to be wired up.
 
-![day_2_plantochi_sketch.jpg](images/day_2/day_2_plantochi_sketch.jpg)
+![Breadboard sketch of platochi in Fritzing](images/day_2/day_2_plantochi_sketch.jpg)
 
 As there are about three craploads of components, we went on an expedition with our shovels and pickaxes and selected the components according to our plan.
 
@@ -70,7 +70,7 @@ As there are about three craploads of components, we went on an expedition with 
 
 Description and more details: [https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/pinouts](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/pinouts)
 
-![day_2_feather_m4_express_pinout.png](images/day_2/day_2_feather_m4_express_pinout.png)
+![Pinout schematic for Feather M4 Express](images/day_2/day_2_feather_m4_express_pinout.png)
 
 ## Day 3
 
@@ -153,12 +153,12 @@ Some of these plants generate produce.
 The PLA that is used in the schools’ 3D-printers, is not particularly food safe.
 Therefore, wood was used for the box which is laser cut from sheets.
 
-![plantochi_box.svg](images/day_3/plantochi_box.svg)
+![V1 schema for box](images/day_3/plantochi_box.svg)
 
 After laser cutting the box was assembled and held together by strong willpower, prayers and some tape.
 
-![plantochi_box_front.jpg](images/day_3/plantochi_box_front.jpg)
-![plantochi_box_top.jpg](images/day_3/plantochi_box_top.jpg)
+![Assembled box front](images/day_3/plantochi_box_front.jpg)
+![Assembled box top](images/day_3/plantochi_box_top.jpg)
 
 Some details were noticed when putting the components into the box:
 
@@ -171,7 +171,7 @@ Some details were noticed when putting the components into the box:
 - Adding a little hole in the wall for the battery.
 - Increasing the size for the charging cable (those suckers are huge).
 
-![plantochi_box_v2.svg](images/day_3/plantochi_box_v2.svg)
+![V2 schema for box](images/day_3/plantochi_box_v2.svg)
 
 After planning all the details and creating different mount options (based on flower pot sizes), the **Next Gen Box 2.0** 
 is released.
@@ -179,8 +179,8 @@ The **Next Gen Box 2.0** comes without any problems and can actually be used wit
 Some wood glue and tape later, it is assembled and ready for tomorrow's hot glue day, where we make fit everything in 
 the box.
 
-![plantochi_box_v2_front.jpg](images/day_3/plantochi_box_v2_front.jpg)
-![plantochi_box_v2_top.jpg](images/day_3/plantochi_box_v2_top.jpg)
+![Assembled box v2 front](images/day_3/plantochi_box_v2_front.jpg)
+![Assembled box v2 top](images/day_3/plantochi_box_v2_top.jpg)
 
 This box fits all the components and can therefore be used.
 
@@ -196,9 +196,9 @@ It is mostly used with irony and goes a bit into the opposite of "the more, the 
 Anyway, most parts will not move anymore.
 The hot glue made sure of it.
 
-![assembly_top.jpg](images/day_3/assembly_top.jpg)
-![glue_ldr.jpg](images/day_3/glue_ldr.jpg)
-![glue_protoboard.jpg](images/day_3/glue_protoboard.jpg)
+![Assembled from top](images/day_3/assembly_top.jpg)
+![Glue on LDR](images/day_3/glue_ldr.jpg)
+![Glue on protoboard](images/day_3/glue_protoboard.jpg)
 
 Now, the logic was tested multiple times before putting everything in the box.
 It was tested again after putting it into the box.
@@ -217,7 +217,7 @@ The expected outcome is the following connections:
 3 → 5 (VCC),
 4 → 6 (GND).
 
-![debug.png](images/day_3/debug.png)
+![Image with numbers to show debugging](images/day_3/debug.png)
 
 Turns out, all the connections are fine like that.
 The next thing is checking for shorts.
@@ -229,7 +229,7 @@ As you already can guess, the cables there were touching.
 Bending the cables back into shape and, while monitoring that the display keeps working, hot gluing everything, solved
 the problem.
 
-![glue_fix.jpg](images/day_3/glue_fix.jpg)
+![Image with hotglued connection isolation](images/day_3/glue_fix.jpg)
 
 Lesson learned: Apparently, if you crunch a couple of cables around a corner, and their uninsulated ends touch, half 
 the project will not work anymore.
