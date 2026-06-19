@@ -40,7 +40,7 @@ just
 
 ## AI Disclaimer
 
-OpenCode BigPickle was used to generate an initial version of this `README.md`.
+OpenCode BigPickle was used to generate an initial version of this `README.md` and some parts of the documentation.
 
 ## License
 
