@@ -6,7 +6,7 @@ On day 1, we only had a short brainstorming session. See the results below.
 
 ### Brainstorming
 
-![A piece of paper with brainstorming arround plants](./images/day_1_brainstorming.jpg)
+![A piece of paper with brainstorming arround plants](./images/day_1/day_1_brainstorming.jpg)
 
 From a first brainstorming session, we identified different things, with different priorities.
 We decided on three priorities, with the following features:
@@ -25,10 +25,10 @@ Creation of the first proof of concept (PoC) and prototypes. We also thought abo
 
 The first cardboard prototype was essentially a big box, with two hooks to put it onto a flower pot. The MCU (microcontroller unit) is placed towards the bottom so that the charging port can be placed below the box, together with the speaker which is hidden there. The display, light sensor and cables to extend to the soil moisture sensor are placed on the top.
 
-![A box out of cardboard](images/day_2_paper_prototype_1.jpg)
-![A box out of cardboard](images/day_2_paper_prototype_2.jpg)
-![A box out of cardboard](images/day_2_paper_prototype_3.jpg)
-![A box out of cardboard](images/day_2_paper_prototype_4.jpg)
+![A box out of cardboard](images/day_2/day_2_paper_prototype_1.jpg)
+![A box out of cardboard](images/day_2/day_2_paper_prototype_2.jpg)
+![A box out of cardboard](images/day_2/day_2_paper_prototype_3.jpg)
+![A box out of cardboard](images/day_2/day_2_paper_prototype_4.jpg)
 
 ### UI (Emotions)
 
@@ -62,7 +62,7 @@ You can see the code for the first prototype [here](../code/poc_1/poc_1.ino).
 A first sketch of the prototype is displayed below.
 It is used to get some sense of what components we need and a bit on how they are supposed to be wired up.
 
-![day_2_plantochi_sketch.jpg](images/day_2_plantochi_sketch.jpg)
+![day_2_plantochi_sketch.jpg](images/day_2/day_2_plantochi_sketch.jpg)
 
 As there are about three craploads of components, we went on an expedition with our shovels and pickaxes and selected the components according to our plan.
 
@@ -70,7 +70,7 @@ As there are about three craploads of components, we went on an expedition with 
 
 Description and more details: [https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/pinouts](https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/pinouts)
 
-![day_2_feather_m4_express_pinout.png](images/day_2_feather_m4_express_pinout.png)
+![day_2_feather_m4_express_pinout.png](images/day_2/day_2_feather_m4_express_pinout.png)
 
 ## Day 3
 
