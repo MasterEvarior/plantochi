@@ -23,7 +23,7 @@ Creation of the first proof of concept (PoC) and prototypes. We also thought abo
 
 ### Prototype Box
 
-The first cardboard prototype was essentially a big box, with two hooks to put it onto a flower pot. The MCU (microcontroller unit) is placed towards the bottom so that the charging port can be placed below the box, together with the speaker which is hidden there. The display, light sensor and cabels to extends to the soil moisture sensore, are placed on the top.
+The first cardboard prototype was essentially a big box, with two hooks to put it onto a flower pot. The MCU (microcontroller unit) is placed towards the bottom so that the charging port can be placed below the box, together with the speaker which is hidden there. The display, light sensor and cables to extend to the soil moisture sensor are placed on the top.
 
 ![A box out of cardboard](images/day_2_paper_prototype_1.jpg)
 ![A box out of cardboard](images/day_2_paper_prototype_2.jpg)
@@ -78,7 +78,7 @@ Today was mostly spent finishing up the code and designing the enclosure.
 
 ### Code
 
-The code was split in mutliple files to make it *somewhat* more managable. This brought the core loop to look like this:
+The code was split in multiple files to make it *somewhat* more manageable. This brought the core loop to look like this:
 
 ```{.c}
 void loop(void) {
@@ -164,7 +164,7 @@ Some details were noticed when putting the components into the box:
 
 - The cable for the display is very short and needs to reach very far
   - Moving the display slot a bit over
-  - Switching the orientation for the box, so that the display points the right way (parts of the display are blue and 
+  - Switching the orientation for the box so that the display points the right way (parts of the display are blue and 
     yellow and this needs to face the right direction).
 - Increase the size for the soil moisture sensor cable.
 - Decrease the size for the LDR sensor (must have been drunk while measuring that).
